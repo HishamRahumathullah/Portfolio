@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahamed Hisham — AI Engineer | Portfolio</title>
-  <meta name="description" content="Portfolio of Ahamed Hisham, an AI Engineer specializing in machine learning, computer vision, and deep learning solutions." />
+  <title>Ahamed Hisham — AI Engineer | Data Pipeline Engineer</title>
+  <meta name="description" content="Portfolio of Ahamed Hisham, specializing in building scalable, production-grade LLM applications and automated data ecosystems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -340,7 +340,7 @@
     .hero-tagline {
       font-size: 1.1rem;
       color: var(--text-secondary);
-      max-width: 520px;
+      max-width: 550px;
       margin: 0 auto 2.5rem;
       line-height: 1.8;
     }
@@ -475,7 +475,7 @@
 
     .stat-number {
       display: block;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 800;
       background: linear-gradient(135deg, var(--cyan), var(--violet));
       -webkit-background-clip: text;
@@ -490,104 +490,6 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
-
-    /* ---------- EXPERIENCE / TIMELINE ---------- */
-    .timeline {
-      position: relative;
-      padding-left: 3rem;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 12px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(180deg, var(--cyan), var(--violet), var(--emerald));
-      opacity: 0.3;
-      border-radius: 2px;
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 3rem;
-    }
-
-    .timeline-dot {
-      position: absolute;
-      left: -2.72rem;
-      top: 1.5rem;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--cyan);
-      box-shadow: 0 0 16px var(--cyan);
-      z-index: 2;
-    }
-
-    .timeline-item:nth-child(2) .timeline-dot { background: var(--violet); box-shadow: 0 0 16px var(--violet); }
-    .timeline-item:nth-child(3) .timeline-dot { background: var(--emerald); box-shadow: 0 0 16px var(--emerald); }
-
-    .timeline-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 18px;
-      padding: 2rem 2.2rem;
-      transition: all 0.4s var(--ease-out-expo);
-      transform-style: preserve-3d;
-      perspective: 800px;
-    }
-
-    .timeline-card:hover {
-      border-color: var(--border-glow);
-      background: var(--bg-card-hover);
-      box-shadow: 0 8px 40px rgba(0, 243, 255, 0.08);
-    }
-
-    .timeline-period {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      color: var(--cyan);
-      letter-spacing: 0.06em;
-    }
-
-    .timeline-header h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-top: 0.3rem;
-    }
-
-    .timeline-company {
-      color: var(--text-dim);
-      font-size: 0.92rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .resp-item {
-      margin-bottom: 1rem;
-    }
-
-    .resp-item p {
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-      line-height: 1.7;
-    }
-
-    .resp-tag {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 0.25rem 0.7rem;
-      border-radius: 20px;
-      margin-bottom: 0.5rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .tag-cyan    { background: var(--cyan-dim); color: var(--cyan); }
-    .tag-violet  { background: var(--violet-dim); color: var(--violet); }
-    .tag-emerald { background: var(--emerald-dim); color: var(--emerald); }
 
     /* ---------- EDUCATION ---------- */
     .edu-card {
@@ -651,22 +553,6 @@
     .scholarship-icon {
       font-size: 1.4rem;
       flex-shrink: 0;
-    }
-
-    .edu-focus {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .focus-tag {
-      font-size: 0.78rem;
-      font-weight: 500;
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
     }
 
     /* ---------- SKILLS ---------- */
@@ -769,7 +655,7 @@
     /* ---------- PROJECTS ---------- */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       gap: 2rem;
     }
 
@@ -783,6 +669,8 @@
       transition: all 0.4s var(--ease-out-expo);
       transform-style: preserve-3d;
       perspective: 800px;
+      display: flex;
+      flex-direction: column;
     }
 
     .project-card:hover {
@@ -802,6 +690,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       line-height: 1;
+      z-index: 0;
     }
 
     .project-icon-wrap {
@@ -813,6 +702,8 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 1.2rem;
+      position: relative;
+      z-index: 1;
     }
 
     .project-icon {
@@ -823,19 +714,26 @@
       font-size: 1.25rem;
       font-weight: 700;
       margin-bottom: 0.8rem;
+      position: relative;
+      z-index: 1;
     }
 
     .project-card p {
       font-size: 0.92rem;
       color: var(--text-secondary);
       line-height: 1.75;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+      position: relative;
+      z-index: 1;
+      flex-grow: 1;
     }
 
     .project-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
+      position: relative;
+      z-index: 1;
     }
 
     .project-tags span {
@@ -970,12 +868,6 @@
       .hero-name {
         font-size: clamp(2.2rem, 10vw, 3.5rem);
       }
-      .timeline {
-        padding-left: 2rem;
-      }
-      .timeline-card {
-        padding: 1.5rem;
-      }
       .skills-grid {
         grid-template-columns: 1fr;
       }
@@ -1010,7 +902,7 @@
     <a href="#hero" class="nav-logo">AH<span class="accent">.</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -1024,7 +916,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -1039,7 +931,7 @@
       <p class="hero-title reveal-up">
         <span class="typewriter" id="typewriter"></span><span class="blink-caret">|</span>
       </p>
-      <p class="hero-tagline reveal-up">Building intelligent systems that see, learn, and automate.</p>
+      <p class="hero-tagline reveal-up">Building scalable, production-grade LLM applications and automated data ecosystems.</p>
       <div class="hero-cta reveal-up">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
@@ -1059,112 +951,27 @@
       <h2 class="section-title reveal-up">About <span class="gradient-text">Me</span></h2>
       <div class="about-grid">
         <div class="about-text reveal-up">
-          <p>AI Engineer and Computer Science Senior specializing in <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>deep learning</strong> solutions. Experienced in building end-to-end AI pipelines, model deployment, and data-driven automation.</p>
-          <p>Currently engineering next-gen AI solutions while managing US operations analytics. Proven track record of optimizing systems and workforce efficiency by <span class="highlight">20%+</span> through predictive modeling and intelligent automation.</p>
+          <p><strong>AI Engineer</strong> and <strong>Data Pipeline Engineer</strong> specializing in building scalable, production-grade LLM applications and automated data ecosystems.</p>
+          <p>Expert in orchestrating complex data pipelines, designing Retrieval-Augmented Generation (RAG) architectures, and implementing automated evaluation frameworks to ensure high-performance, faithful AI outputs.</p>
         </div>
         <div class="about-stats reveal-up">
+          <div class="stat-card tilt-card">
+            <span class="stat-number">Prod</span>
+            <span class="stat-label">LLM Pipelines</span>
+          </div>
+          <div class="stat-card tilt-card">
+            <span class="stat-number">Auto</span>
+            <span class="stat-label">ETL Workflows</span>
+          </div>
+          <div class="stat-card tilt-card">
+            <span class="stat-number">Adv.</span>
+            <span class="stat-label">RAG Systems</span>
+          </div>
           <div class="stat-card tilt-card">
             <span class="stat-number">20%+</span>
             <span class="stat-label">Efficiency Gains</span>
           </div>
-          <div class="stat-card tilt-card">
-            <span class="stat-number">75%</span>
-            <span class="stat-label">Lead Conversion</span>
-          </div>
-          <div class="stat-card tilt-card">
-            <span class="stat-number">70%</span>
-            <span class="stat-label">Failure Reduction</span>
-          </div>
-          <div class="stat-card tilt-card">
-            <span class="stat-number">3+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EXPERIENCE SECTION ============ -->
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title reveal-up">Work <span class="gradient-text">Experience</span></h2>
-
-      <div class="timeline">
-
-        <!-- Cedar Financial -->
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card tilt-card">
-            <div class="timeline-header">
-              <span class="timeline-period">Current</span>
-              <h3>AI & Data Engineer <span class="dim">(MIS Specialist)</span></h3>
-              <p class="timeline-company">Cedar Financial</p>
-            </div>
-            <div class="timeline-body">
-              <div class="resp-item">
-                <span class="resp-tag tag-cyan">AI Solution Development</span>
-                <p>Engineered next-generation AI solutions and computer vision models for business intelligence automation, improving operational decision-making accuracy.</p>
-              </div>
-              <div class="resp-item">
-                <span class="resp-tag tag-violet">Predictive Modeling & Analytics</span>
-                <p>Built predictive models and automated reporting systems using Python, Scikit-learn, and Power BI, optimizing workforce efficiency by 20%+.</p>
-              </div>
-              <div class="resp-item">
-                <span class="resp-tag tag-emerald">Data Pipeline & API Development</span>
-                <p>Developed and deployed data processing pipelines and REST APIs using FastAPI, enabling real-time analytics for US operations.</p>
-              </div>
-              <div class="resp-item">
-                <span class="resp-tag tag-cyan">Strategic Resource Planning</span>
-                <p>Implemented data-driven resource allocation strategies using statistical analysis and machine learning forecasts.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- AA Motors -->
-        <div class="timeline-item reveal-right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card tilt-card">
-            <div class="timeline-header">
-              <span class="timeline-period">Mar 2020 - Jan 2021</span>
-              <h3>Sales Assistant</h3>
-              <p class="timeline-company">AA Motors</p>
-            </div>
-            <div class="timeline-body">
-              <div class="resp-item">
-                <span class="resp-tag tag-violet">Data-Driven Customer Analytics</span>
-                <p>Leveraged CRM data to analyze customer behavior patterns, achieving 75% lead-to-sale conversion through targeted engagement strategies.</p>
-              </div>
-              <div class="resp-item">
-                <span class="resp-tag tag-emerald">Process Automation</span>
-                <p>Automated sales documentation and reporting workflows, ensuring 100% accuracy and reducing manual processing time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- KMMG -->
-        <div class="timeline-item reveal-left">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card tilt-card">
-            <div class="timeline-header">
-              <span class="timeline-period">Jan 2019 - Mar 2020</span>
-              <h3>IT Technician</h3>
-              <p class="timeline-company">KMMG Pvt Ltd</p>
-            </div>
-            <div class="timeline-body">
-              <div class="resp-item">
-                <span class="resp-tag tag-cyan">System Infrastructure & Automation</span>
-                <p>Maintained and optimized server and network infrastructure, reducing system failures by 70% through proactive monitoring and automation scripts.</p>
-              </div>
-              <div class="resp-item">
-                <span class="resp-tag tag-violet">Technical Support & Troubleshooting</span>
-                <p>Resolved hardware, software, and network issues across endpoints, achieving high first-call resolution rate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -1176,18 +983,12 @@
       <div class="edu-card tilt-card reveal-up">
         <div class="edu-badge">🎓</div>
         <div class="edu-info">
-          <h3>BSc. Computer Science</h3>
+          <h3>BSc. Computer Science Hons.</h3>
           <p class="edu-institution">Government College University — Lahore</p>
           <p class="edu-period">2022 — 2026</p>
           <div class="edu-scholarship">
             <span class="scholarship-icon">🏅</span>
             <p>Recipient of the prestigious <strong>Allama Iqbal Scholarship</strong> — Full ride for top Sri Lankan students</p>
-          </div>
-          <div class="edu-focus">
-            <span class="focus-tag">Artificial Intelligence</span>
-            <span class="focus-tag">Machine Learning</span>
-            <span class="focus-tag">Computer Vision</span>
-            <span class="focus-tag">Deep Learning</span>
           </div>
         </div>
       </div>
@@ -1216,16 +1017,14 @@
 
         <div class="skill-category reveal-up tilt-card">
           <div class="skill-icon">🧠</div>
-          <h3>AI & Machine Learning</h3>
+          <h3>AI & LLM Frameworks</h3>
           <div class="skill-tags">
-            <span>Machine Learning</span>
-            <span>Deep Learning</span>
-            <span>Computer Vision</span>
-            <span>Scikit-learn</span>
-            <span>TensorFlow / PyTorch</span>
-            <span>NumPy</span>
-            <span>Pandas</span>
-            <span>Model Deployment</span>
+            <span>LangChain</span>
+            <span>LlamaIndex</span>
+            <span>HuggingFace</span>
+            <span>PyTorch</span>
+            <span>Pydantic</span>
+            <span>RAGAS</span>
           </div>
         </div>
 
@@ -1233,34 +1032,35 @@
           <div class="skill-icon">🔧</div>
           <h3>Data Engineering</h3>
           <div class="skill-tags">
-            <span>Data Pipelines</span>
-            <span>ETL</span>
-            <span>FastAPI</span>
-            <span>REST APIs</span>
-            <span>Jupyter Notebooks</span>
-            <span>Git</span>
+            <span>Apache Airflow</span>
+            <span>dbt (Data Build Tool)</span>
+            <span>Apache Spark</span>
+            <span>Kafka</span>
+            <span>PostgreSQL</span>
           </div>
         </div>
 
         <div class="skill-category reveal-up tilt-card">
-          <div class="skill-icon">📊</div>
-          <h3>BI & Visualization</h3>
+          <div class="skill-icon">🗄️</div>
+          <h3>Data Warehousing</h3>
           <div class="skill-tags">
-            <span>Power BI</span>
-            <span>Data Visualization</span>
-            <span>Statistical Analysis</span>
-            <span>Business Intelligence</span>
+            <span>Snowflake</span>
+            <span>BigQuery</span>
+            <span>ChromaDB</span>
+            <span>Pinecone</span>
+            <span>Weaviate</span>
           </div>
         </div>
 
         <div class="skill-category reveal-up tilt-card">
           <div class="skill-icon">🛠️</div>
-          <h3>Tools & Platforms</h3>
+          <h3>DevOps & Tools</h3>
           <div class="skill-tags">
-            <span>Git</span>
             <span>Docker</span>
-            <span>Linux</span>
-            <span>Cloud Fundamentals</span>
+            <span>Git</span>
+            <span>FastAPI</span>
+            <span>Jupyter Notebooks</span>
+            <span>MLflow</span>
           </div>
         </div>
 
@@ -1269,12 +1069,11 @@
       <!-- Core Competencies -->
       <h2 class="section-title reveal-up" style="margin-top:6rem;">Core <span class="gradient-text">Competencies</span></h2>
       <div class="competencies reveal-up">
-        <div class="competency-pill">Machine Learning & Deep Learning</div>
-        <div class="competency-pill">Computer Vision & Image Processing</div>
-        <div class="competency-pill">Model Training & Deployment</div>
-        <div class="competency-pill">Predictive Modeling</div>
-        <div class="competency-pill">Data Pipeline Engineering</div>
-        <div class="competency-pill">MLOps & Automation</div>
+        <div class="competency-pill">Retrieval-Augmented Generation (RAG)</div>
+        <div class="competency-pill">LLM Evaluation & Benchmarking</div>
+        <div class="competency-pill">Data Pipeline Orchestration (ETL/ELT)</div>
+        <div class="competency-pill">Cloud Data Warehousing</div>
+        <div class="competency-pill">Predictive Modeling & Automation</div>
       </div>
     </div>
   </section>
@@ -1288,21 +1087,31 @@
 
         <div class="project-card tilt-card reveal-up">
           <div class="project-number">01</div>
-          <div class="project-icon-wrap"><span class="project-icon">📈</span></div>
-          <h3>AI-Powered Business Intelligence System</h3>
-          <p>Developed automated reporting and predictive analytics system for workforce optimization, improving efficiency by 20%+.</p>
+          <div class="project-icon-wrap"><span class="project-icon">🔍</span></div>
+          <h3>RAG System Development & Evaluation</h3>
+          <p>Designed and implemented a Retrieval-Augmented Generation (RAG) system using LangChain and Vector Databases. Conducted rigorous performance evaluation using the RAGAS framework to optimize retrieval precision, context relevance, and answer faithfulness.</p>
           <div class="project-tags">
-            <span>Python</span><span>Scikit-learn</span><span>Power BI</span><span>FastAPI</span>
+            <span>Python</span><span>LangChain</span><span>Vector DBs</span><span>RAGAS</span><span>FastAPI</span>
           </div>
         </div>
 
         <div class="project-card tilt-card reveal-up">
           <div class="project-number">02</div>
-          <div class="project-icon-wrap"><span class="project-icon">👁️</span></div>
-          <h3>Computer Vision Solutions</h3>
-          <p>Engineered next-gen computer vision models for automated data extraction and business process optimization.</p>
+          <div class="project-icon-wrap"><span class="project-icon">⚖️</span></div>
+          <h3>LLM Benchmarking & Evaluation Pipeline</h3>
+          <p>Developed an automated evaluation framework to assess Large Language Model performance, including metrics for hallucination rates, toxicity, and latency. Implemented comparative analysis pipelines to iterate on prompt engineering and model selection.</p>
           <div class="project-tags">
-            <span>PyTorch</span><span>OpenCV</span><span>Deep Learning</span><span>Docker</span>
+            <span>Python</span><span>HuggingFace</span><span>OpenAI API</span><span>Prompt Engineering</span><span>Eval Metrics</span>
+          </div>
+        </div>
+
+        <div class="project-card tilt-card reveal-up">
+          <div class="project-number">03</div>
+          <div class="project-icon-wrap"><span class="project-icon">⚡</span></div>
+          <h3>Automated Data Pipeline & BI Architecture</h3>
+          <p>Built end-to-end data pipelines to ingest, clean, and process data for high-level business intelligence. Leveraged SQL and automation tools like Airflow and dbt to streamline reporting and ensure data integrity.</p>
+          <div class="project-tags">
+            <span>SQL</span><span>PostgreSQL</span><span>dbt</span><span>Apache Airflow</span><span>Power BI</span>
           </div>
         </div>
 
@@ -1327,7 +1136,7 @@
           <h3>Phone</h3>
           <p>+94 76 690 5719</p>
         </a>
-        <a href="https://www.linkedin.com/in/ahamedhisham" target="_blank" rel="noopener" class="contact-card tilt-card">
+        <a href="https://www.linkedin.com/in/ahamed-hisham-316375261/" target="_blank" rel="noopener" class="contact-card tilt-card">
           <span class="contact-icon">💼</span>
           <h3>LinkedIn</h3>
           <p>Ahamed Hisham</p>
@@ -1670,10 +1479,9 @@
 
       const phrases = [
         'AI Engineer',
-        'Machine Learning Specialist',
-        'Computer Vision Expert',
-        'Deep Learning Architect',
         'Data Pipeline Engineer',
+        'LLM Architect',
+        'RAG Specialist',
       ];
 
       let phraseIdx = 0;
